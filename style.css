@@ -2,7 +2,7 @@
     --primary-color: #2e94a3;
     --secondary-color: #ffc0cb;
     --white: #ffffffff;
-    --grey: #d4d4d4;
+    --grey: #e3e3e3;
 }
 
 * {
@@ -25,12 +25,40 @@
 
 .header {
     background-color: var(--white);
-    grid-area: 1 / 2 / 3 / 3;
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem 2rem;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header .search-section {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    align-items: center;
 }
 
 .header .search-bar {
     background-color: var(--grey);
-    border-radius: 1rem;
+    border-radius: 2rem;
+    height: 1.75rem;
+}
+
+.header .search-icon {
+    height: 1.5rem;
+}
+
+.header .user-info {
+    text-align: right;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* SIDEBAR PROPERTIES */
