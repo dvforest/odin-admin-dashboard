@@ -83,12 +83,17 @@
 }
 
 .sidebar li {
-    font-size: 1.1rem;
-    font-weight: 500;
     list-style: none;
 }
 
-.sidebar li, .title {
+.sidebar a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: inherit;
+    text-decoration: none;
+}
+
+.sidebar a, .title {
     display: grid;
     align-items: center;
     gap: 1rem;
