@@ -17,7 +17,7 @@
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 8rem 1fr;
 }
 
@@ -77,7 +77,6 @@
 
 .sidebar .nav {
     display: grid;
-    grid-template-rows: 2rem;
     margin-top: 2.5rem;
     gap: 1rem;
 }
