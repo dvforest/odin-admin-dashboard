@@ -46,6 +46,12 @@
     background-color: var(--grey);
     border-radius: 2rem;
     height: 1.75rem;
+    padding: 0 1rem;
+    border: none;
+}
+
+.header .search-bar:focus {
+    outline: 2px solid var(--primary-color);
 }
 
 .header .search-icon {
