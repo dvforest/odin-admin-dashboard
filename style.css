@@ -1,6 +1,7 @@
 :root {
     --primary-color: #2e94a3;
     --secondary-color: #ffc0cb;
+    --dark: #7f7f7f;
     --white: #ffffffff;
     --grey: #e3e3e3;
 }
@@ -23,7 +24,7 @@ a {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 8rem 1fr;
+    grid-template-rows: 10rem 1fr;
 }
 
 /* HEADER PROPERTIES*/
@@ -41,13 +42,13 @@ a {
     grid-template-columns: 3fr 2fr;
 }
 
-.header .search-section {
+.header-top .search-section {
     display: grid;
     grid-template-columns: 2rem 1fr;
     align-items: center;
 }
 
-.header .search-bar {
+.header-top .search-bar {
     background-color: var(--grey);
     border-radius: 2rem;
     height: 1.75rem;
@@ -55,37 +56,57 @@ a {
     border: none;
 }
 
-.header .search-bar:focus {
+.header-top .search-bar:focus {
     outline: 2px solid var(--primary-color);
 }
 
-.header .search-icon {
+.header-top .search-icon {
     height: 1.5rem;
 }
 
-.header .user-info {
+.header-top .user-info {
     display: flex;
     justify-content: end;
     gap: 2rem;
     align-items: center;
 }
 
-.header .notif-icon {
+.header-top .notif-icon {
     height: 1.5rem;
 }
 
-.header .user-avatar {
-    height: 3rem;
+.header-top .small-user-avatar {
+    height: 2.5rem;
 }
 
-.header .user-name {
+.header-top .small-user-name {
     font-weight: 700;
     font-size: 1.2rem;
 }
 
 .header-bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: min-content 1fr 1fr;
+    align-items: center;
+}
+
+.header-bottom .large-user-avatar {
+    height: 4rem;
+}
+
+.header-bottom .user-greeting {
+    padding-left: 1rem;
+}
+
+.header-bottom .small-greeting {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.header-bottom .large-user-name {
+    font-size: 1.5rem;
+    font-weight: 1000;
 }
 
 /* SIDEBAR PROPERTIES */
