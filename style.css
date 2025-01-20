@@ -1,5 +1,7 @@
 :root {
     --primary-color: #2e94a3;
+    --primary-color-lighter: #41a9b9;
+    --primary-color-darker: #286a74;
     --secondary-color: #ffc0cb;
     --dark: #7f7f7f;
     --white: #ffffffff;
@@ -125,7 +127,17 @@ a {
     border: none;
     background-color: var(--primary-color);
     color: var(--white);
+    cursor: pointer;
 }
+
+.header .primary-actions button:hover {
+    background-color: var(--primary-color-lighter);
+}
+
+.header .primary-actions button:active {
+    background-color: var(--primary-color-darker);
+}
+
 
 /* SIDEBAR PROPERTIES */
 
