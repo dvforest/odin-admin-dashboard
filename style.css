@@ -2,7 +2,7 @@
     --primary-color: #2e94a3;
     --primary-color-lighter: #41a9b9;
     --primary-color-darker: #286a74;
-    --secondary-color: #ffc0cb;
+    --secondary-color: #d26b7d;
     --dark: #7f7f7f;
     --white: #ffffffff;
     --grey: #e3e3e3;
@@ -114,14 +114,18 @@ a {
     font-weight: 1000;
 }
 
-.header .primary-actions {
+.header-bottom .user-handle {
+    color: var(--secondary-color);
+}
+
+.header-bottom .primary-actions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-content: center;
 }
 
-.header .primary-actions button {
+.header-bottom .primary-actions button {
     border-radius: 1rem;
     padding: 0.5rem 1.5rem;
     border: none;
@@ -130,11 +134,11 @@ a {
     cursor: pointer;
 }
 
-.header .primary-actions button:hover {
+.header-bottom .primary-actions button:hover {
     background-color: var(--primary-color-lighter);
 }
 
-.header .primary-actions button:active {
+.header-bottom .primary-actions button:active {
     background-color: var(--primary-color-darker);
 }
 
