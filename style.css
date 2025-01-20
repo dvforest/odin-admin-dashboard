@@ -23,7 +23,7 @@ a {
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 15rem 5fr;
     grid-template-rows: 10rem 1fr;
 }
 
@@ -33,8 +33,10 @@ a {
     background-color: var(--white);
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr;
     padding: 1rem 3rem;
+    position: relative;
+    box-shadow: 0 -1rem 2rem;
 }
 
 .header-top {
@@ -132,6 +134,7 @@ a {
     background-color: var(--primary-color);
     padding: 1rem;
     color: white;
+    position: relative;
 }
 
 .sidebar .title {
