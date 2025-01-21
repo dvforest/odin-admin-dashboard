@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    border: 1px solid lightgrey;*/
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,9 +22,8 @@ a {
 
 .container {
     display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 15rem 5fr;
+    width: 100%;
+    grid-template-columns: 20% 1fr;
     grid-template-rows: min-content 1fr;
 }
 
@@ -133,6 +131,8 @@ a {
     background-color: var(--primary-color);
     color: var(--white);
     cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .header-bottom .primary-actions button:hover {
@@ -155,7 +155,7 @@ a {
 }
 
 .sidebar .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -170,7 +170,7 @@ a {
 }
 
 .sidebar a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
@@ -201,15 +201,88 @@ a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 2rem 1rem;
+    padding: 2rem;
+    gap: 2rem;
 }
 
 .main-content .projects {
     grid-area: 1 / 1 / span 2 / span 1;
 }
 
-.main-content h1 {
-    font-size: 1.1rem;
-
+.main-content .content-type {
+    font-size: 1.2rem;
+    grid-column: 1 / span 2;
+    margin-bottom: 1rem;
 }
+
+.main-content .content-box {
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.projects .content-box {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    border-left: 0.5rem solid var(--secondary-color);
+}
+
+.projects .project-icons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.projects .small-icon {
+    height: 1.5rem;
+}
+
+.projects .project-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.projects .project-info {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+    text-wrap: balance;
+}
+
+.announcements .content-box {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.announcements .separator-line {
+    background-color: var(--grey);
+    height: 0.1rem;
+    border-radius: 0.5rem;
+}
+
+.announcements .news-title {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.announcements .news-info {
+    font-size: 0.7rem;
+    color: var(--dark);
+}
+
+.trending .content-box {
+    display: grid;
+    gap: 1.5rem;
+}
+
+
 
