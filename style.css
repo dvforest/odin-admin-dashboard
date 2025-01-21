@@ -23,7 +23,7 @@ a {
 .container {
     display: grid;
     width: 100%;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: minmax(min-content, 20%) 1fr;
     grid-template-rows: min-content 1fr;
 }
 
@@ -200,7 +200,6 @@ a {
     grid-area: 2 / 2 / 3 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
     padding: 2rem;
     gap: 2rem;
 }
@@ -282,6 +281,24 @@ a {
 .trending .content-box {
     display: grid;
     gap: 1.5rem;
+}
+
+.trending .project {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending .small-user-avatar {
+    height: 2.5rem;
+}
+
+.trending .user-handle {
+    font-size: 0.8rem;
+}
+
+.trending .project-name {
+    font-size: 0.7rem;
+    color: var(--dark);
 }
 
 
